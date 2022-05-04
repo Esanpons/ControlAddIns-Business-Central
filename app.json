@@ -1,0 +1,31 @@
+{
+  "id": "52038c7c-10ea-4b0e-bc15-a4b543cc3fc9",
+  "name": "ControlAddIn Basico BC",
+  "publisher": "Esteve Sanpons Carballares",
+  "version": "1.0.0.0",
+  "brief": "ControlAddIn Basico BC",
+  "description": "ControlAddIn Basico BC",
+  "privacyStatement": "https://github.com/Esanpons",
+  "EULA": "https://github.com/Esanpons",
+  "help": "https://github.com/Esanpons",
+  "url": "https://github.com/Esanpons",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "application": "19.0.0.0",
+  "platform": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50149
+    }
+  ],
+  "supportedLocales": [
+    "en-US",
+    "es-ES"
+],
+"features": [
+    "TranslationFile"
+],
+"runtime": "8.0"
+}
