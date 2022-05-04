@@ -1,4 +1,4 @@
-page 50061 "TestPageWithAddIn"
+page 50061 "TestPageAddIn"
 {
     Caption = 'Test Page AddIn';
 
