@@ -3,6 +3,11 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="ControlAddIn Basico BC">
     <body>
       <group id="body">
+        <trans-unit id="Page 611881344 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ABD Mensaje Comercial</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ABDMensaje - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1130048501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Test Page AddIn</source>
           <note from="Developer" annotates="general" priority="2"></note>
