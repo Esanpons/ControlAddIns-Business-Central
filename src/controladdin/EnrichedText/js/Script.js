@@ -1,4 +1,3 @@
-
 var InputArea
 var Editor
 
@@ -32,8 +31,4 @@ function Load(data) {
 
 function RequestSave() {
     Microsoft.Dynamics.NAV.InvokeExtensibilityMethod("SaveRequested",[Editor.getData()]);
-}
-function SetReadOnly(readonly)
-{
-    Editor.isReadOnly = readonly;
 }
