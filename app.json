@@ -16,8 +16,8 @@
   "platform": "19.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 50149
+      "from": 60000,
+      "to": 60149
     }
   ],
   "supportedLocales": [
