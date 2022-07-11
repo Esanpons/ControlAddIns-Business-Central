@@ -12,12 +12,12 @@
   "logo": "",
   "dependencies": [],
   "screenshots": [],
-  "application": "19.0.0.0",
-  "platform": "19.0.0.0",
+  "application": "1.0.0.0",
+  "platform": "20.0.0.0",
   "idRanges": [
     {
       "from": 60000,
-      "to": 60149
+      "to": 65149
     }
   ],
   "supportedLocales": [
@@ -27,5 +27,5 @@
 "features": [
     "TranslationFile"
 ],
-"runtime": "8.0"
+"runtime": "9.0"
 }

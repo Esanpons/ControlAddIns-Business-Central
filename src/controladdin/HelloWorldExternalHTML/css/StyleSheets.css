@@ -1,0 +1,20 @@
+
+
+.contenedor{
+  float: left;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+}
+
+.ref {
+  font-weight: negrita;
+  color: navy;
+  content: "Reference: ";
+}
+.orange{
+  width: 33.333%;
+  vertical-align: middle;
+  text-align: center;
+  color: rgb(234, 109, 0);
+}

@@ -1,22 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="en-US" original="ControlAddIn Basico BC">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="ControlAddIn Basico BC">
     <body>
       <group id="body">
         <trans-unit id="Page 3359531340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HelloWorldExternalHTML</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page HelloWorldExternalHTML - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1130048501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Test Page AddIn</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page TestPageAddIn - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3276313895 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Description</source>
           <note from="Developer" annotates="general" priority="2">ESP="Descripción producto"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item - Field Item Description - Property Caption</note>
+          <target>Descripción producto</target>
         </trans-unit>
       </group>
     </body>
