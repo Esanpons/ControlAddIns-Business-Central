@@ -12,9 +12,11 @@ controladdin "HelloWorldExternalHTML"
     HorizontalShrink = true;
     StartupScript = 'src\controladdin\HelloWorldExternalHTML\js\InitScript.js';
     StyleSheets = 'src\controladdin\HelloWorldExternalHTML\css\StyleSheets.css';
-    Scripts = 'https://code.jquery.com/jquery-3.6.0.min.js', 'src\controladdin\HelloWorldExternalHTML\js\Scripts.js';
+    Scripts = 'https://code.jquery.com/jquery-3.6.0.min.js',
+            'src\controladdin\HelloWorldExternalHTML\js\Scripts.js';
     Images = 'src\controladdin\HelloWorldExternalHTML\html\main.html';
 
     event CallBack();
     procedure HelloWorld(text: Text);
+
 }
