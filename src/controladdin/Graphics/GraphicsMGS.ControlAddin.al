@@ -4,7 +4,9 @@ controladdin "Graphics MGS"
     RequestedWidth = 500;
     StartupScript = 'src/controlAddIn/Graphics/js/StarUp.js';
     Scripts =
-        'src/controlAddIn/Graphics/js/Script.js', 'https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js', 'https://code.jquery.com/jquery-3.6.0.min.js';
+        'src/controlAddIn/Graphics/js/Script.js',
+        'https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js',
+        'https://code.jquery.com/jquery-3.6.0.min.js';
     Images = 'src/controlAddIn/Graphics/html/Init.html';
 
     event ControlAddInReady();

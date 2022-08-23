@@ -22,9 +22,9 @@ function Init(etiquetas, data, TituloData) {
 
 function CrearGrafica(etiquetas) {
     // Obtener una referencia al elemento canvas del DOM
-    const $grafica = document.querySelector("#grafica");
+    const grafica = document.querySelector("#grafica");
 
-    new Chart($grafica, {
+    new Chart(grafica, {
         type: 'bar',// Tipo de gráfica
         data: {
             labels: etiquetas,
