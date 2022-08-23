@@ -29,6 +29,8 @@ page 60061 "TestPageAddIn"
             action(LlamarFuncion)
             {
                 ApplicationArea = All;
+                Image = "1099Form";
+                ToolTip = ' ';
 
                 trigger OnAction();
                 begin

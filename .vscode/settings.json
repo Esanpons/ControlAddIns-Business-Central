@@ -2,12 +2,15 @@
     //básicas de la extensión de AL
     "[al]": {
         "editor.wordBasedSuggestions": true,
-        "editor.suggestSelection": "first"
+        "editor.suggestSelection": "first",
+        //es para los colores 
+        "editor.bracketPairColorization.enabled": true,
+        "editor.semanticHighlighting.enabled": true
     },
     //Valores del analyzer, que va a tener en cuenta en lo warnigs
     "al.codeAnalyzers": [
-        //"${AppSourceCop}", // es para saber si nuestro código subiría a app source
-        //"${PerTenantExtensionCop}", // es cuando tú haces una extensión que estará en SAS
+        "${AppSourceCop}", // es para saber si nuestro código subiría a app source
+        "${PerTenantExtensionCop}", // es cuando tú haces una extensión que estará en SAS
         "${CodeCop}", // analizador de código estándar
         "${UICop}" //Para hacer las propiedades mínimas para ejecutar tu desarrollo.
     ],
@@ -22,17 +25,13 @@
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
     //las de Waldo. Configuración de nombres de archivos y objetos
-    "CRS.ObjectNamePrefix": "",
     "CRS.ObjectNameSuffix": "",
-    "CRS.RemovePrefixFromFilename": true, //Cuando renombre un objeto sea obligatorio un prefijo
-    "CRS.RemoveSuffixFromFilename": false, //Cuando renombre un objeto sea obligatorio un sufijo
     //estructura para los nombres de los objetos
-    "CRS.FileNamePattern": "<Prefix><ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
-    "CRS.FileNamePatternExtensions": "<Prefix><ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
-    "CRS.FileNamePatternPageCustomizations": "<Prefix><ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.OnSaveAlFileAction": "Rename",
     //opción de autoformato
     "editor.formatOnSave": true,
-    "editor.bracketPairColorization.enabled": false,
-    "xliffSync.baseFile": "Mitra Internal Base App.es-ES.g.xlf"
+    "al.ruleSetPath": "./app.ruleset.json"
 }

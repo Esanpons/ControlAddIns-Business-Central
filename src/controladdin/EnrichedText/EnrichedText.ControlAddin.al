@@ -1,4 +1,4 @@
-controladdin EnrichedText
+controladdin "EnrichedText"
 {
     RequestedHeight = 350;
     VerticalStretch = true;

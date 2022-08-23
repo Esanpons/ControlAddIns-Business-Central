@@ -1,4 +1,4 @@
-controladdin HelloWorldAddIn
+controladdin "HelloWorldAddIn"
 {
     RequestedHeight = 300;
     MinimumHeight = 300;

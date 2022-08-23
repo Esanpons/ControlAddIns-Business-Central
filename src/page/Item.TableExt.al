@@ -4,7 +4,7 @@ tableextension 60000 "Item" extends Item
     {
         field(60000; "Item Description"; Text[2048])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Item Description', Comment = 'ESP="Descripción producto"';
         }
     }

@@ -13,6 +13,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TestPageAddIn - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1130048501 - Action 1195776331 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TestPageAddIn - Action LlamarFuncion - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3276313895 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Description</source>
           <note from="Developer" annotates="general" priority="2">ESP="Descripción producto"</note>

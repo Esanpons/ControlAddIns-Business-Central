@@ -1,4 +1,4 @@
-pageextension 60000 "Item Car Ext" extends "Item Card"
+pageextension 60000 "Item Card Ext" extends "Item Card"
 {
     layout
     {
@@ -21,7 +21,7 @@ pageextension 60000 "Item Car Ext" extends "Item Card"
 
                 trigger SaveRequested(data: Text)
                 begin
-                    Rec."Item Description" := data;
+                    Rec."Item Description" := CopyStr(data, 1, 2048);
                 end;
             }
         }

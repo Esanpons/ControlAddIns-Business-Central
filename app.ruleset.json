@@ -1,0 +1,21 @@
+{
+    "name": "Ruleset Mitra",
+    "rules": [
+        {                    
+            "id": "AS0084",                    
+            "action": "None"
+        },
+        {                    
+            "id": "AS0092",                    
+            "action": "None"
+        },
+        {                    
+            "id": "AS0054",                    
+            "action": "None"
+        },
+        {                    
+            "id": "AS0051",                    
+            "action": "None"
+        }
+    ]
+}
