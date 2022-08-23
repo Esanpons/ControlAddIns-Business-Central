@@ -3,6 +3,23 @@
   <file datatype="xml" source-language="en-US" target-language="es-ES" original="ControlAddIn Basico BC">
     <body>
       <group id="body">
+        <trans-unit id="Page 2804906015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Graphics</source>
+          <note from="Developer" annotates="general" priority="2">ESP="graficos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Graphics - Property Caption</note>
+          <target>graficos</target>
+        </trans-unit>
+        <trans-unit id="Page 2804906015 - Control 2258626040 - Method 1546781382 - NamedType 1104380114" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ventas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Graphics - Control GraphicsMGS - Method ControlAddInReady - NamedType TitulosLbl</note>
+          <target>Ventas</target>
+        </trans-unit>
+        <trans-unit id="Page 2804906015 - Control 949215307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Graphics - Control No - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3359531340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>HelloWorldExternalHTML</source>
           <note from="Developer" annotates="general" priority="2"/>
