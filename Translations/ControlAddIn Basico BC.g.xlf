@@ -3,6 +3,16 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="ControlAddIn Basico BC">
     <body>
       <group id="body">
+        <trans-unit id="Page 3680936618 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the field</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica el valor del campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ChangeSizeSelector - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3680936618 - Control 949215307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the field</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica el valor del campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ChangeSizeSelector - Control No - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2804906015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Graphics</source>
           <note from="Developer" annotates="general" priority="2">ESP="graficos"</note>
