@@ -1,4 +1,4 @@
-controladdin "Graphics MGS"
+controladdin "Graphics"
 {
     RequestedHeight = 250;
     RequestedWidth = 500;

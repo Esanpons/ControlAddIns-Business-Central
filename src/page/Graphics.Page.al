@@ -10,7 +10,7 @@ page 60000 "Graphics"
         area(Content)
         {
 
-            usercontrol(GraphicsMGS; "Graphics MGS")
+            usercontrol(Graphics; "Graphics")
             {
                 ApplicationArea = All;
                 trigger ControlAddInReady()
@@ -29,7 +29,7 @@ page 60000 "Graphics"
                     JArrayEtiquetas.Add('Marzo');
                     JArrayEtiquetas.Add('Abril');
 
-                    CurrPage.GraphicsMGS.Init(JArrayEtiquetas, JArrayData, TitulosLbl);
+                    CurrPage.Graphics.Init(JArrayEtiquetas, JArrayData, TitulosLbl);
                 end;
             }
         }
