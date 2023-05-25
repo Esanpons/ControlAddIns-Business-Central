@@ -1,0 +1,5 @@
+#signatureCanvas {
+    border: 1px solid #000;
+    touch-action: none;
+    /* Evita que los gestos táctiles afecten al canvas */
+  }
