@@ -22,7 +22,7 @@ function guardarFirma() {
     if (signPad.isEmpty()) {
         alert('Por favor, firma antes de guardar.');
     } else {
-        var imageData = signaturePad.toDataURL('image/jpeg'); // Convertir a formato JPEG
+        var imageData = signPad.toDataURL('image/jpeg'); // Convertir a formato JPEG
         var signatureBase64 = imageData.replace(/^data:image\/jpeg;base64,/, ''); // Remover el encabezado de datos
 
         console.log('Signatura en Base 64', signatureBase64);
