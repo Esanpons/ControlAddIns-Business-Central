@@ -21,14 +21,14 @@ page 60003 "Card Sign"
 
                 trigger SaveSign(Base64Sign: Text)
                 begin
-                    SetSignToBase64(Base64Sign);
+                    Base64ToSign(Base64Sign);
                     Message(Base64Sign);
                 end;
             }
         }
     }
 
-    procedure SetSignToBase64(Base64Text: Text)
+    procedure Base64ToSign(Base64Text: Text)
     var
         Base64Convert: Codeunit "Base64 Convert";
         TempBlob: Codeunit "Temp Blob";
