@@ -54,11 +54,23 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page TestPageAddIn - Action LlamarFuncion - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3217958164 - Control 685401789 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Specifies the value of the field</source>
+          <target state="translated">Especifica el valor del campo</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica el valor del campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Ext - Control Sign - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3276313895 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Description</source>
           <target state="translated">Descripción producto</target>
           <note from="Developer" annotates="general" priority="2">ESP="Descripción producto"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item - Field Item Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3276313895 - Field 685401789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Sign</source>
+          <target state="translated">Firma</target>
+          <note from="Developer" annotates="general" priority="2">ESP="Firma"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item - Field Sign - Property Caption</note>
         </trans-unit>
       </group>
     </body>

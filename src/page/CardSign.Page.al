@@ -4,6 +4,7 @@ page 60003 "Card Sign"
     UsageCategory = Administration;
     ApplicationArea = All;
     Caption = 'Card To Sign', Comment = 'ESP="Ficha para firmar"';
+    SourceTable = Item;
 
     layout
     {
@@ -20,11 +21,34 @@ page 60003 "Card Sign"
 
                 trigger SaveSign(Base64Sign: Text)
                 begin
+                    SetSignToBase64(Base64Sign);
                     Message(Base64Sign);
                 end;
             }
         }
     }
+
+    procedure SetSignToBase64(Base64Text: Text)
+    var
+        Base64Convert: Codeunit "Base64 Convert";
+        TempBlob: Codeunit "Temp Blob";
+        DocOutStream: OutStream;
+        DocInStream: InStream;
+    begin
+        Clear(TempBlob);
+        Clear(Base64Convert);
+        Clear(DocOutStream);
+        Clear(DocInStream);
+
+        TempBlob.CreateOutStream(DocOutStream);
+        Base64Convert.FromBase64(Base64Text, DocOutStream);
+        TempBlob.CreateInStream(DocInStream);
+
+        Rec.FindFirst();
+        Clear(Rec."picture");
+        Rec."picture".ImportStream(DocInStream, 'sign', 'image/jpeg');
+        Rec.Modify();
+    end;
 
 
 }
