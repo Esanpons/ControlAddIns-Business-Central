@@ -1,5 +1,6 @@
 page 60000 "Graphics"
 {
+    /*
     PageType = Card;
     UsageCategory = Administration;
     ApplicationArea = All;
@@ -34,4 +35,5 @@ page 60000 "Graphics"
             }
         }
     }
+    */
 }
