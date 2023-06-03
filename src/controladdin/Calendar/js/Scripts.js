@@ -21,12 +21,23 @@ var events = [
 
 var legendItems = [
     { 
-        name: 'Color 1', 
+        name: 'Color 2: Event 1', 
         color: 'blue' 
     },
     {
-        name: 'Color 2', 
+        name: 'Color 2: Event 2', 
         color: 'yellow'
+    }
+];
+
+var legendItems2 = [
+    { 
+        name: 'Color 1: Event 1', 
+        color: 'red' 
+    },
+    {
+        name: 'Color 1: Event 2', 
+        color: 'green'
     }
 ];
 
@@ -60,13 +71,22 @@ function InitCalendar() {
         $('#calendar').fullCalendar(calendarOptions);
     
         // Generar la leyenda de colores dinámicamente
-        var legendElement = $('#legend');
+        var legendElement = $('#legend1');
         legendItems.forEach(function (item) {
             var legendItem = $('<div>', { class: 'legend-item' });
             var legendColor = $('<div>', { class: 'legend-color' }).css('background-color', item.color);
             var legendLabel = $('<div>', { class: 'legend-label' }).text(item.name);
             legendItem.append(legendColor, legendLabel);
             legendElement.append(legendItem);
+        });
+
+        var legendElement2 = $('#legend2');
+        legendItems2.forEach(function (item) {
+            var legendItem = $('<div>', { class: 'legend-item' });
+            var legendColor = $('<div>', { class: 'legend-color' }).css('background-color', item.color);
+            var legendLabel = $('<div>', { class: 'legend-label' }).text(item.name);
+            legendItem.append(legendColor, legendLabel);
+            legendElement2.append(legendItem);
         });
     });
 }
