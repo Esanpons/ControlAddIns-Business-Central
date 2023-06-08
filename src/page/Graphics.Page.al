@@ -1,6 +1,6 @@
 page 60000 "Graphics"
 {
-    /*
+
     PageType = Card;
     UsageCategory = Administration;
     ApplicationArea = All;
@@ -11,7 +11,7 @@ page 60000 "Graphics"
         area(Content)
         {
 
-            usercontrol(Graphics; "Graphics")
+            usercontrol(Graphics; "Graphic")
             {
                 ApplicationArea = All;
                 trigger ControlAddInReady()
@@ -35,5 +35,5 @@ page 60000 "Graphics"
             }
         }
     }
-    */
+
 }

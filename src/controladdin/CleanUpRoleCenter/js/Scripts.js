@@ -39,7 +39,7 @@ function HideParentParentItem(IdItem){
 
 function HideButtonToNavigateToOtherProfiles(){
     //ocultamos el boton de navegar a otros perfiles
-    HideParentItem('button.ms-Button.ms-Button--icon');
+    HideParentItem('.profile-action-container--2aSoMSmscwR9-5kzHiuG7g');
 }
 
 function RemovePageTitle(){

@@ -1,4 +1,4 @@
-controladdin "Graphics"
+controladdin "Graphic"
 {
     RequestedHeight = 250;
     RequestedWidth = 500;
