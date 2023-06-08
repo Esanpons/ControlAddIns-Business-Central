@@ -59,9 +59,6 @@ function RemovePageTitleFromControlAddIn(){
 
 function WeMakeTheControlAddinInTakeUpLessSpace(IdControlAddIn){
     //hacemos que el controlAddIn ocupe menos espacio
-    if (IdControlAddIn == '' || IdControlAddIn == null || IdControlAddIn == undefined){
-        IdControlAddIn = '#b12';
-    }
     parent.$(IdControlAddIn).removeClass();
     parent.$(IdControlAddIn).attr('style', 'width: 1px !important; height: 1px !important; min-width: 1px !important; min-height: 1px !important; max-width: 1px !important; max-height: 1px !important;');
 }
