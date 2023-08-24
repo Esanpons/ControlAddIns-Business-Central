@@ -10,6 +10,8 @@ Este proyecto tiene como objetivo proporcionar una serie de ControlAddins que ab
 
 En este repositorio, encontrarás una variedad de ControlAddins que abordan diferentes aspectos de la experiencia de usuario y la funcionalidad en Business Central:
 
+-   **HelloWorldAddIn y HelloWorldExternalHTML**: Uns ejemplos básicos de como crear los ControlAddin.
+
 -   **Geolocalización**: Un ControlAddin que permite mostrar la ubicación dentro de la interfaz de Business Central.
 
 -   **Calendar**: Te permite añadir un calendario integrado en Business Central.
