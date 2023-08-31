@@ -26,6 +26,8 @@ En este repositorio, encontrarás una variedad de ControlAddins que abordan dife
 
 -   **CleanUpRoleCenter**: Un conjunto de ControlAddins diseñados para personalizar y optimizar la interfaz de usuario de Business Central, ocultando elementos no deseados.
 
+-   **AttachmentsDragAndDrop**: Es un ControlAddIn diseñado para arrastrar y soltar archivos y poderlos adjuntar al documento. Parte de la funcionalidad de este ControlAddIn se basa en el trabajo original de [Volodymyr Dvernytskyi](https://vld-nav.com/drag-and-drop-factbox#agenda)
+
 ## Contribuciones y Uso
 
 Estos ControlAddins están disponibles para su uso y modificación. Siéntete libre de explorar, modificar y adaptar estos ControlAddins según tus necesidades.
