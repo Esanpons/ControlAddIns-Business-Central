@@ -1,6 +1,6 @@
 //crs-al disable
 // le quito las funciones de la extension de CRS de Waldo para que no modifique el nombre y funcione todo correctamente, ya que depende del nombre que todo valla bien.
-page 81700 "AttachmentsDragAndDropFactbox"
+page 60015 "AttachmentsDragAndDropFactbox"
 {
     Caption = 'Attachments Drag And Drop', Comment = 'ESP="Documentos Adjuntos Drag And Drop"';
     PageType = ListPart;
@@ -9,6 +9,7 @@ page 81700 "AttachmentsDragAndDropFactbox"
     InsertAllowed = false;
     ModifyAllowed = false;
     RefreshOnActivate = true;
+
     layout
     {
         area(content)
@@ -26,6 +27,7 @@ page 81700 "AttachmentsDragAndDropFactbox"
                 var
                     Base64Convert: Codeunit "Base64 Convert";
                     TempBlob: Codeunit "Temp Blob";
+                    RecordRefe: RecordRef;
                     FileInStream: InStream;
                     FileOutStream: OutStream;
                 begin
@@ -33,8 +35,10 @@ page 81700 "AttachmentsDragAndDropFactbox"
                     Base64Convert.FromBase64(FileAsText.Substring(FileAsText.IndexOf(',') + 1), FileOutStream);
                     TempBlob.CreateInStream(FileInStream, TextEncoding::UTF8);
 
+                    RecordRefe := VariablesSingleInstance.GetRecordRefe();
+
                     Rec.ID := 0;
-                    Rec.SaveAttachmentFromStream(FileInStream, GetSourceRecRef(), FileName);
+                    Rec.SaveAttachmentFromStream(FileInStream, RecordRefe, FileName);
 
                     if IsLastFile then
                         CurrPage.Update(false);
@@ -75,22 +79,25 @@ page 81700 "AttachmentsDragAndDropFactbox"
         }
     }
 
-    local procedure GetSourceRecRef(): RecordRef
+    trigger OnOpenPage()
+    begin
+        VariablesSingleInstance.ClearRecordRefe();
+    end;
+
+    trigger OnQueryClosePage(CloseAction: Action): Boolean
+    begin
+        VariablesSingleInstance.ClearRecordRefe();
+    end;
+
+    procedure SetParams(RecVariant: Variant)
     var
         RecordRefe: RecordRef;
-        FieldRefNo: FieldRef;
-        TableNo: Integer;
-        TablePK: Text;
     begin
-        Rec.FilterGroup(4);
-        Evaluate(TableNo, Rec.GetFilter("Table ID"));
-        Evaluate(TablePK, Rec.GetFilter("No."));
-        RecordRefe.Open(TableNo);
-        FieldRefNo := RecordRefe.Field(1);
-        FieldRefNo.SetRange(TablePK);
-        RecordRefe.FindFirst();
-        Rec.FilterGroup(0);
-        exit(RecordRefe);
+        VariablesSingleInstance.ClearRecordRefe();
+
+        CLEAR(RecordRefe);
+        RecordRefe.GETTABLE(RecVariant);
+        Rec.InitFieldsFromRecRef(RecordRefe);
     end;
 
     procedure ExportFile(ShowFileDialog: Boolean): Text
@@ -111,5 +118,8 @@ page 81700 "AttachmentsDragAndDropFactbox"
         Rec."Document Reference ID".ExportStream(OutStream);
         exit(FileManagement.BLOBExport(TempBlob, FullFileName, ShowFileDialog));
     end;
+
+    var
+        VariablesSingleInstance: Codeunit "Variables SingleInstance";
 }
 //crs-al enable
