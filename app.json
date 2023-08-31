@@ -1,32 +1,33 @@
 {
   "id": "52038c7c-10ea-4b0e-bc15-a4b543cc3fc9",
-  "name": "ControlAddIn Basico BC",
+  "name": "ControlAddIn Básico BC",
   "publisher": "Esteve Sanpons Carballares",
-  "version": "1.0.0.0",
-  "brief": "ControlAddIn Basico BC",
-  "description": "ControlAddIn Basico BC",
+  "brief": "ControlAddIn Básico BC",
+  "description": "ControlAddIn Básico BC",
   "privacyStatement": "https://github.com/Esanpons",
   "EULA": "https://github.com/Esanpons",
   "help": "https://github.com/Esanpons",
   "url": "https://github.com/Esanpons",
-  "contextSensitiveHelpUrl":  "https://github.com/Esanpons",
-  "logo": "",
+  "contextSensitiveHelpUrl": "https://github.com/Esanpons",
+  "logo": "./image/logo.png",
   "dependencies": [],
   "screenshots": [],
-  "application": "1.0.0.0",
-  "platform": "20.0.0.0",
   "idRanges": [
     {
-      "from": 60000,
-      "to": 65149
+      "from": 50000,
+      "to": 99000
     }
   ],
   "supportedLocales": [
     "en-US",
     "es-ES"
-],
-"features": [
+  ],
+  "features": [
+    "NoImplicitWith",
     "TranslationFile"
-],
-"runtime": "9.0"
+  ],
+  "version": "1.0.0.0",
+  "application": "22.0.0.0",
+  "platform": "1.0.0.0",
+  "runtime": "11.0"
 }

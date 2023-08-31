@@ -14,6 +14,11 @@
         "${CodeCop}", // analizador de código estándar
         "${UICop}" //Para hacer las propiedades mínimas para ejecutar tu desarrollo.
     ],
+    //para las DLL
+     "al.assemblyProbingPaths": [
+            "./.netpackages",
+            "C:/Windows/assembly"
+        ],
     //activar el code Análisis
     "al.enableCodeAnalysis": true,
     "al.enableCodeActions": true,
@@ -33,5 +38,10 @@
     "CRS.OnSaveAlFileAction": "Rename",
     //opción de autoformato
     "editor.formatOnSave": true,
+    //Configuraciones de las traducciones
+    "alTranslationCenter.general.customLanguageMapping": {
+        "ESP": "es-ES_tradnl"
+    },
+    //ubicacion del ruleset. Sirve para eliminar Warnings y errores
     "al.ruleSetPath": "./app.ruleset.json"
 }
