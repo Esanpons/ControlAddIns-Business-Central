@@ -1,4 +1,4 @@
-pageextension 60000 "Item Card Ext" extends "Item Card"
+pageextension 60000 "Item Card" extends "Item Card"
 {
     layout
     {
