@@ -28,6 +28,8 @@ En este repositorio, encontrarás una variedad de ControlAddins que abordan dife
 
 -   **AttachmentsDragAndDrop**: Es un ControlAddIn diseñado para arrastrar y soltar archivos y poderlos adjuntar al documento. Parte de la funcionalidad de este ControlAddIn se basa en el trabajo original de [Volodymyr Dvernytskyi](https://vld-nav.com/drag-and-drop-factbox#agenda)
 
+-   **ViewVideo**: Es un ControlAddIn para visualizar videos tanto de YouTube como añadidos en el proyecto.
+
 ## Contribuciones y Uso
 
 Estos ControlAddins están disponibles para su uso y modificación. Siéntete libre de explorar, modificar y adaptar estos ControlAddins según tus necesidades.
