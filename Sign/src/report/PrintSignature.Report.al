@@ -4,7 +4,7 @@ report 60000 "Print Signature"
     ApplicationArea = All;
     Caption = 'Print Signature', Comment = 'ESP="Imprimir firma"';
     UsageCategory = ReportsAndAnalysis;
-    RDLCLayout = 'src\report\PrintSign.rdl';
+    RDLCLayout = 'Sign\src\report\PrintSign.rdl';
 
     dataset
     {
