@@ -30,6 +30,8 @@ En este repositorio, encontrarás una variedad de ControlAddins que abordan dife
 
 -   **ViewVideo**: Es un ControlAddIn para visualizar videos tanto de YouTube como añadidos en el proyecto.
 
+-   **EnrichedText-Summernote**: Optimiza la edición de texto enriquecido en Business Central mediante la integración del editor Summernote. Facilita la creación de descripciones y comentarios mejorados, ofreciendo funciones de edición avanzadas directamente en formularios de Business Central. Mejora la usabilidad y la presentación de información, proporcionando una solución efectiva y fácilmente integrable en proyectos de desarrollo.
+
 ## Contribuciones y Uso
 
 Estos ControlAddins están disponibles para su uso y modificación. Siéntete libre de explorar, modificar y adaptar estos ControlAddins según tus necesidades.
