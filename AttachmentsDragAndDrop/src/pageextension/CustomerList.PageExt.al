@@ -11,4 +11,9 @@ pageextension 81700 "Customer List" extends "Customer List"
             }
         }
     }
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        CurrPage.DragAndDropFactbox.Page.SetParams(Rec);
+    end;
 }

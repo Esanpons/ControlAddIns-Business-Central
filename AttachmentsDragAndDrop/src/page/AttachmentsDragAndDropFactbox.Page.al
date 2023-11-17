@@ -79,11 +79,6 @@ page 60015 "AttachmentsDragAndDropFactbox"
         }
     }
 
-    trigger OnOpenPage()
-    begin
-        VariablesSingleInstance.ClearRecordRefe();
-    end;
-
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
         VariablesSingleInstance.ClearRecordRefe();

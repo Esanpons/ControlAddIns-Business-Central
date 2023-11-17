@@ -14,6 +14,7 @@ codeunit 60001 "Variables SingleInstance"
     #region SET
     procedure SetRecordRefe(l_RecordRefe: RecordRef)
     begin
+        ClearRecordRefe();
         RecordRefe := l_RecordRefe;
     end;
     #endregion
