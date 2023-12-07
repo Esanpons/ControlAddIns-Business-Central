@@ -49,13 +49,13 @@ page 60015 "AttachmentsDragAndDropFactbox"
                 ShowCaption = false;
                 field("File Name"; Rec."File Name")
                 {
+                    ToolTip = 'Specifies the value of the field', comment = 'ESP="Especifica el valor del campo"';
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the File Name field.';
                 }
                 field("File Extension"; Rec."File Extension")
                 {
+                    ToolTip = 'Specifies the value of the field', comment = 'ESP="Especifica el valor del campo"';
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the File Extensions field.';
                 }
             }
         }
@@ -67,17 +67,42 @@ page 60015 "AttachmentsDragAndDropFactbox"
             action(DownloadFile)
             {
                 ApplicationArea = All;
-                Caption = 'Download File';
-                ToolTip = 'Download File';
+                Caption = 'Download File', Comment = 'ESP="Descargar Archivo"';
+                ToolTip = 'Download File', Comment = 'ESP="Descargar Archivo"';
                 Image = Download;
                 Enabled = Rec."File Name" <> '';
+
                 trigger OnAction()
                 begin
                     ExportFile(true);
                 end;
             }
+            action(ViewAttachments)
+            {
+                ApplicationArea = All;
+                Caption = 'View Attachments', Comment = 'ESP="Ver adjuntos"';
+                ToolTip = 'Add a file as an attachment. You can attach images as well as documents.', Comment = 'ESP="Agregue un archivo como archivo adjunto. Puede adjuntar imágenes y documentos."';
+                Image = Attach;
+
+                trigger OnAction()
+                var
+                    DocumentAttachmentDetails: Page "Document Attachment Details";
+                    RecordRefe: RecordRef;
+                begin
+                    Clear(RecordRefe);
+                    Clear(DocumentAttachmentDetails);
+
+                    RecordRefe := VariablesSingleInstance.GetRecordRefe();
+                    DocumentAttachmentDetails.OpenForRecRef(RecordRefe);
+                    DocumentAttachmentDetails.RunModal();
+
+                    VariablesSingleInstance.ClearRecordRefe();
+                end;
+            }
         }
     }
+
+
 
     trigger OnQueryClosePage(CloseAction: Action): Boolean
     begin
@@ -93,6 +118,8 @@ page 60015 "AttachmentsDragAndDropFactbox"
         CLEAR(RecordRefe);
         RecordRefe.GETTABLE(RecVariant);
         Rec.InitFieldsFromRecRef(RecordRefe);
+
+
     end;
 
     procedure ExportFile(ShowFileDialog: Boolean): Text
