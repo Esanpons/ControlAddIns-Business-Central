@@ -25,6 +25,8 @@ En este repositorio, encontrarás una variedad de ControlAddins que abordan dife
 -   **Sign**: Un ControlAddin que permite a los usuarios capturar firmas digitales y guardarlas en registros dentro de Business Central.
 
 -   **CleanUpRoleCenter**: Un conjunto de ControlAddins diseñados para personalizar y optimizar la interfaz de usuario de Business Central, ocultando elementos no deseados.
+-   
+-   **ConvertHexAndUnicode**: Permite convertir texto entre hexadecimal (UTF-16LE) y Unicode legible. Útil para integraciones y validaciones de codificación dentro de Business Central.
 
 -   **AttachmentsDragAndDrop**: Es un ControlAddIn diseñado para arrastrar y soltar archivos y poderlos adjuntar al documento. Parte de la funcionalidad de este ControlAddIn se basa en el trabajo original de [Volodymyr Dvernytskyi](https://vld-nav.com/drag-and-drop-factbox#agenda)
 
