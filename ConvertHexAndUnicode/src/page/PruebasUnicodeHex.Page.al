@@ -33,7 +33,7 @@ page 55000 "Pruebas Unicode - Hex"
     {
         area(processing)
         {
-            action("jbc ConvertirHex")
+            action("ConvertirHex")
             {
                 Caption = ' Hex ➝ Unicode';
                 ApplicationArea = All;
@@ -44,7 +44,7 @@ page 55000 "Pruebas Unicode - Hex"
                 end;
             }
 
-            action("jbc ConvertirTexto")
+            action("ConvertirTexto")
             {
                 Caption = ' Unicode ➝ Hex';
                 ApplicationArea = All;
